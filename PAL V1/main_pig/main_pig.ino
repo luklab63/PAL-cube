@@ -17,11 +17,13 @@ void boutread(){
   if(!boul && boutstate1)
   {
     boul = true;
+    
   }
   else if(!boutstate1)
   {
     boul = false;
   }
+
 }
 
 void setup()   {
@@ -29,7 +31,11 @@ void setup()   {
   pinMode(bout1, INPUT);
   display.begin();  // initialisation de l'afficheur
   display.clearDisplay();   // ça efface à la fois le buffer et l'écran
-  display.drawBitmap(0, 0, bit_cat_default, 128 , 64, WHITE);
+  display.drawBitmap(0, 0, title_screen, 128 , 64, WHITE);
+  display.display();
+  delay(2000);
+  display.clearDisplay();   
+  display.drawBitmap(0, 0, bit_pig_default, 128 , 64, WHITE);
   display.display();
 }
 
@@ -44,13 +50,13 @@ void loop(){
 
     if(millis()-last_time >= wait_time){
 
-      int face_rand_goofy =random(1, 10);
-      int face_rand_sleep =random(1, 10);
-      static int sleep_time = random(5000, 9000);
+      int face_rand_goofy =random(1, 5);
+      int face_rand_sleep =random(1, 20);
+      static int sleep_time = random(10000, 30000);
 
       if(blink_state) {
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_default, 128 , 64, WHITE);
+        display.drawBitmap(0, 0, bit_pig_default, 128 , 64, WHITE);
         display.display();
         wait_time = random(3000, 5000);
       }
@@ -61,32 +67,32 @@ void loop(){
           Serial.println(sleep_start);
           Serial.println(millis()- sleep_start );
           display.clearDisplay();
-          display.drawBitmap(0, 0, bit_cat_sleep, 128 , 64, WHITE);
+          display.drawBitmap(0, 0, bit_pig_sleep_1, 128 , 64, WHITE);
           display.display();
           delay(500);
 
           display.clearDisplay();
-          display.drawBitmap(0, 0, bit_cat_sleep2, 128 , 64, WHITE);
+          display.drawBitmap(0, 0, bit_pig_sleep_2, 128 , 64, WHITE);
           display.display();
           delay(500);
         }
 
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_default, 128 , 64, WHITE);
+        display.drawBitmap(0, 0, bit_pig_default, 128 , 64, WHITE);
         display.display();
       }
 
       else {
       
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_blink, 128 , 64, WHITE);
+        display.drawBitmap(0, 0, bit_pig_blink, 128 , 64, WHITE);
         display.display();
         wait_time = 100;
       
 
         if (face_rand_goofy == 1){
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_goofy, 128 , 64, WHITE);
+        display.drawBitmap(0, 0, bit_pig_goofy, 128 , 64, WHITE);
         display.display();
         wait_time = 1500;
         }
@@ -104,22 +110,23 @@ void loop(){
     while (boul) {
 
       boutread();
-
+      Serial.println("bouton");
       if (face_rand_pet == 1){
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_feral, 128 , 64, WHITE);
+        display.drawBitmap(0, 0, bit_pig_angy, 128 , 64, WHITE);
         display.display();
+        
       }
 
       else if(face_rand_pet ==2 ){
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_angy, 128 , 64, WHITE);
+        display.drawBitmap(0, 0, bit_pig_flip, 128 , 64, WHITE);
         display.display();
       }
 
       else if(face_rand_pet == 3){
         display.clearDisplay();
-        display.drawBitmap(0, 0, bit_cat_love, 128 , 64, WHITE);
+        display.drawBitmap(0, 0,bit_pig_love, 128 , 64, WHITE);
         display.display();
       }
 
