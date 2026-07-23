@@ -1,0 +1,23 @@
+electronics 
+-ESP 32 C6		/
+- TFT Display 		/
+- touch sensor 		/
+- servo x2 		/
+- USB batterie pack~~~
+- buzzer 		/
+
+app 
+- mit app inventor 
+- wifi 
+- controle servo 
+- controle face 
+
+3D 
+- heat formed shoulder pad 
+- tft custome case 
+- banana strap for esp32 /baterries.
+
+"sewing"
+- arm strap 
+- cross body strap
+
