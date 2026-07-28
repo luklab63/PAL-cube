@@ -1,21 +1,22 @@
-electronics 
--ESP 32 C6		/
-- TFT Display 		/
-- touch sensor 		/
-- servo x2 		/
+electronics / code					/ done
+-ESP 32 C6		/ 				-- to do tomorow
+- I2C Display 		/ /				~ working on it 
+- servo x2 		/ /
 - USB batterie pack~~~
-- buzzer 		/
+- buzzer 		/ --
+
 
 app 
-- mit app inventor 
-- wifi 
-- controle servo 
-- controle face 
+- mit app inventor 	/
+- BLE			/
+- controle servo 	/
+- controle face 	/
 
 3D 
 - heat formed shoulder pad 
-- tft custome case 
-- banana strap for esp32 /baterries.
+- display custome case 
+- banana strap for esp32/baterries.
+- "neck 		--
 
 "sewing"
 - arm strap 
