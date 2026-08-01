@@ -16,7 +16,7 @@ app
 - heat formed shoulder pad 
 - display custome case 
 - banana strap for esp32/baterries.
-- "neck 		--
+- "neck 		/
 
 "sewing"
 - arm strap 
