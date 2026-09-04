@@ -1,13 +1,17 @@
-This is a small desk freind that can be placed on the desk or on top of monitor as lon as it is less than 10mm thick
+# PAL V2 
 
-electronics
-- arduino nano
-- SH1106 128x64 px
-- 1 capasitif buton
-optional
-- TP4056 USB-C baterrier charger
-- ~9v li-ion battery
+## electronics 
 
-the graphics were made by so pls don't reuse for financial reasons
+* ESP32 C6 devmodule
+* 2x SG90 servo moteurs 
+* SH1106 0.94" OLED screen 
+* power switch 
+* small batterie bank 
+* used usb cable 
+* PCB 
 
+## The PCB 
 
+it is a simple PCB that holds the ESP32 the batterie connector and the screen and servo connectors. it is 70 x 60 mm 
+
+![pcb]("/PAL%20V2/PCB%203D.png") ![PCB]("/PAL%20V2/PCB%20layers.png")

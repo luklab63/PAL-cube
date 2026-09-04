@@ -2,9 +2,7 @@ electronics / code					/ done
 -ESP 32 C6		/ 				-- to do tomorow
 - I2C Display 		/ /				~ working on it 
 - servo x2 		/ /
-- USB batterie pack~~~
-- buzzer 		/ --
-
+- USB batterie pack     /--
 
 app 
 - mit app inventor 	/
@@ -14,7 +12,7 @@ app
 
 3D 
 - heat formed shoulder pad 
-- display custome case 
+- display custome case /
 - banana strap for esp32/baterries.
 - "neck 		/
 
